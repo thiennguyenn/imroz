@@ -1,0 +1,537 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.pd-1 {
+    padding: 100px 0px;
+}
+
+/* phần header  */
+.header_menu {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+}
+
+.navbar-brand img {
+    width: 25%;
+}
+
+.navbar-brand span {
+    font-size: 2rem;
+    color: white;
+}
+
+.navbar-nav li {
+
+    padding-left: 1.5rem;
+}
+
+.navbar-nav li a {
+    color: white;
+}
+
+.navbar button {
+    padding: 20px 40px !important;
+    border: white solid 1px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+
+/* phần carosel  */
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* #banner{
+    position: absolute;
+    left: 0;
+    top: 0;
+} */
+/* .carousel-inner{position: relative;} */
+.carosel_title {
+    position: absolute;
+    left: 0;
+    /* right: 5%; */
+    bottom: 100px;
+    /* top: 20%; */
+
+
+}
+
+.carosel_title h1 {
+    font-size: 7rem;
+    font-weight: 700;
+}
+
+.carosel_title p {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.carosel_title button {
+    border: #fd4766 solid 2px;
+    padding: 20px 50px;
+    border-radius: 30px;
+    background-color: #bf0727;
+    color: white;
+    transition: all 0.8s;
+}
+
+.carosel_title button:hover {
+    background-color: #fd476500;
+    color: #fd4766;
+    border: #bf0727 solid 2px;
+}
+
+.carousel-indicators li {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    margin: 0 10px !important;
+    border-top: 2px !important;
+    border-bottom: 2px !important;
+
+
+
+    /* border: #bf072600 solid 2px !important; */
+}
+
+.carousel-indicators .active {
+    /* transform: translateY(-10px); */
+
+    border: #fd4766 solid 2px;
+    background-color: transparent;
+
+
+}
+
+
+/* phần Service */
+.text_gradient {
+    /* text-transform: uppercase; */
+    /* color: transparent;
+    background: linear-gradient(120deg #1C99FE 20.69%, #7644FF 50.19%);
+background-clip: text; */
+    /* font-size: 1.2rem; */
+
+    background: linear-gradient(120deg, #1C99FE 20.69%, #7644FF 50.19%, #fd4766 79.69%);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.service_title h2 {
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.service_title p {
+    color: gray;
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+.card {
+    transition: all 0.5s;
+    margin: 15px 0;
+    border: none !important;
+    border-radius: 20px !important;
+    padding: 20px 10px;
+    background-color: rgb(241, 241, 241) !important;
+}
+
+.card:hover {
+    box-shadow: 0 2px 20px 0 #949494ee;
+    transform: translateY(-10px);
+}
+
+
+.card-body i {
+    font-size: 3rem;
+
+    color: #fd4766;
+    margin-bottom: 20px;
+}
+
+.card-body p {
+    color: gray;
+    font-weight: 350;
+    font-size: 1.1rem;
+}
+
+
+/* Phần project */
+#project {
+    background-color: rgba(245, 245, 245, 0.767);
+}
+
+.project_title h2 {
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.project_title p {
+    color: gray;
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+
+/* phần thumbnail */
+.thumbnail {
+    z-index: 2;
+
+
+    position: relative;
+    transition: all 0.8s;
+    border-radius: 20px;
+    color: white;
+    overflow: hidden;
+    height: 450px;
+
+}
+
+.thumbnail::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 1;
+    /* content: ""; */
+    background: linear-gradient(to bottom, rgba(15, 15, 15, 0.274), rgba(15, 15, 15, 0.877) 100%);
+    transition: opacity 0.65s;
+    cursor: pointer;
+}
+
+
+.thumbnail_text {
+    position: absolute;
+    /* z-index: 1; */
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.thumbnail_text p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: gray;
+}
+
+
+.thumbnail_text h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+/* Phần About  */
+
+.about_anh img {
+    border-radius: 15px;
+    width: 100%;
+
+}
+
+.about_title h2 {
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.about_title p {
+    color: gray;
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+.about_tab .nav-pills .nav-item .nav-link.active {
+    background-color: #fd4766;
+    color: white;
+    border-radius: 30px;
+}
+
+.about_tab .nav-pills .nav-item .nav-link {
+    color: black;
+    padding: 10px 41.5px;
+}
+
+.about_tab ul.nav-pills {
+    border: rgba(128, 128, 128, 0.356) solid 0.5px;
+    border-radius: 30px;
+}
+
+/* phần tab_history */
+.Our_History {
+    padding: 25px 0;
+}
+
+.Our_History ul {
+    list-style: none;
+}
+
+.Our_History .list-style--1 li i {
+    color: #fd4766;
+    padding-right: 5px;
+}
+
+.Our_History .list-style--1 li {
+    color: gray;
+    font-weight: 300;
+    padding: 5px 0;
+}
+
+.ourmission p {
+    padding: 25px 0;
+    color: rgba(128, 128, 128, 0.911);
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+
+
+/* Phần People_card */
+#people {
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+.people_title .tab-content .tab-pane h3 {
+    position: absolute;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.05rem;
+    z-index: 2;
+}
+
+.people_title .tab-content .tab-pane h6 {
+    position: absolute;
+    top: 27rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+    z-index: 2;
+}
+
+.people_title .tab-content .tab-pane h6 span {
+    color: #fd4766;
+    font-weight: 800;
+
+}
+
+.people_title .tab-content .tab-pane img {
+
+    position: absolute;
+    width: 177px;
+    height: auto;
+    left: -64px;
+    top: 150px;
+
+    content: "";
+    opacity: 1;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+
+.nav-item .nav-link .thumb {
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+
+}
+
+ul.testimonial-thumb-wrapper li a.active .thumb img {
+    transform: scale(1.1);
+    object-fit: contain;
+    border-radius: 6px;
+    box-shadow: 0 10px 15px 0 rgb(0 0 0 / 30%);
+    filter: none;
+
+
+}
+
+ul.testimonial-thumb-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+ul.testimonial-thumb-wrapper li .thumb {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+
+
+}
+
+li.nav-item a.nav-link {
+    padding: 0;
+    border: none;
+}
+
+ul.testimonial-thumb-wrapper li .thumb img {
+    border-radius: 6px;
+    width: 100%;
+    /* max-height: 140px;
+        min-height: 140px; */
+    object-fit: cover;
+    filter: grayscale(10) contrast(80%);
+    transition: all 0.8s;
+    margin: 1rem 0;
+
+
+}
+
+.people_title {
+    display: flex;
+    align-items: center !important;
+
+}
+
+
+/* Phần our clients  */
+#Our_Clients {
+    background-color: #f9f9f9;
+}
+
+.our_title h2 {
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.our_title p {
+    color: gray;
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+ul.list-group {
+    display: flex;
+
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+ul.list-group li {
+
+    margin: 0;
+    flex-basis: 33.33%;
+    padding: 3rem 1rem;
+    background-color: transparent;
+    border: 1px solid #dbdbdb8e;
+    transition: all 0.5s;
+
+
+}
+
+ul.list-group li img {
+    /* width: 40%; */
+    opacity: 0.8;
+    transition: 0.3s;
+    max-height: 110px;
+    max-width: 150px;
+
+}
+
+ul.list-group li:hover {
+    background-color: #fd4766;
+    transform: scale(1.1);
+    /* transform: scale(-1.1); */
+    border-radius: 10px;
+    z-index: 4;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+.enough_btn button {
+    border: 1.5px solid rgba(255, 255, 255, 0.493);
+    padding: 1.5rem 3rem;
+    margin-left: 20rem;
+    background-color: transparent;
+    color: white;
+    border-radius: 1.5rem;
+    transition: all 0.5s;
+}
+
+.enough_btn button:hover {
+    background-color: #fd4766;
+    border: 1.5px solid rgba(255, 255, 255, 0);
+}
+
+hr {
+    border: 1px !important;
+    border-top: 2px solid rgba(255, 255, 255, 0.226) !important;
+}
+
+/* Phần footer  */
+.footer_logo img {
+    width: 40%;
+}
+
+.footer_logo p {
+    color: gray;
+    margin-top: 6rem;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+.footer_menu1 ul.ft_link {
+    list-style: none;
+    position: relative;
+}
+
+.footer_menu1 ul.ft_link li {
+    margin-top: 1rem;
+    font-weight: 300;
+    color: gray;
+    transition: all 0.8s;
+}
+
+.ft_tong .footer_menu1 ul.ft_link li::after {
+    position: absolute;
+    left: 10;
+    bottom: 0;
+    width: 2px;
+    height: 2px;
+    color: white;
+    /* background: linear-gradient(120deg, #1C99FE 20.69%, #7644FF 50.19%, var(--color-primary) 79.69%); */
+}
+/* .footer_menu1 ul.ft_link li:hover::after{
+    width: 100%;
+} */
+
+.footer_menu1 ul.ft_link li:hover {
+    color: #fd4766;
+
+}
+
+.social ul li {
+    list-style: none;
+    padding-right: 2rem;
+}
